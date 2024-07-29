@@ -34,24 +34,37 @@ Note: Keep your API key confidential and never share it publicly or commit it to
 
 ## Setup
 
-1. Clone the repository or download the source code.
-
-2. Install the required Python packages:
+1. Clone the repository or download the source code:
    ```
-   pip install flask anthropic
+   git clone https://github.com/yourusername/email-analyzer.git
+   cd email-analyzer
    ```
 
-3. Set up your Anthropic API key as an environment variable:
+2. It's recommended to create a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. Install the required Python packages using the `requirements.txt` file:
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Set up your Anthropic API key as an environment variable:
    ```
    export ANTHROPIC_API_KEY=your_api_key_here
    ```
    Replace `your_api_key_here` with your actual Anthropic API key.
 
-4. Save the provided `app.py` file in your project directory.
+   On Windows, use:
+   ```
+   set ANTHROPIC_API_KEY=your_api_key_here
+   ```
 
 ## Running the Application
 
-1. Navigate to the project directory in your terminal.
+1. Ensure you're in the project directory and your virtual environment is activated.
 
 2. Run the Flask application:
    ```
